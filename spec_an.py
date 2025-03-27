@@ -32,11 +32,22 @@ if not spec_an:
 # This is just a way to make the number easier to read.
 spec_an.set_center_frequency(8_400_000_000)
 
-# Set the span to 1 MHz.
-spec_an.set_span(1_000_000)
+# Set the span to 10 KHz.
+spec_an.set_span(10_000)
 
 # Set the reference level to -10 dBm.
-spec_an.set_reference_level(-10)
+spec_an.set_reference_level(-50)
+
+# spec_an.move_center_to_peak(
+#     center_frequency=8_400_000_000,
+#     spans=[
+#         1_000_000,
+#         100_000,
+#         10_000,
+#         1_000,
+#     ],
+#     delay=3
+# )
 
 # Get the center frequency and print it on screen
 center_frequency = spec_an.get_center_frequency()
