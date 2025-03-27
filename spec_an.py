@@ -80,13 +80,13 @@ fig, ax = plt.subplots()
 ax.plot(trace_frequencies, trace_amplitudes)
 
 # Set the x-axis label.
-ax.set_xlabel('Frequency (Hz)')
+ax.set_xlabel("Frequency (Hz)")
 
 # Set the y-axis label.
-ax.set_ylabel('Amplitude (dBm)')
+ax.set_ylabel("Amplitude (dBm)")
 
 # Set the title.
-ax.set_title('Spectrum Analyzer Trace Data')
+ax.set_title("Spectrum Analyzer Trace Data")
 
 # Display the plot.
 plt.show()
